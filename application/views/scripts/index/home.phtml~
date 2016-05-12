@@ -1,0 +1,6 @@
+<center><br><br><br><font color=blue>Welcome <?=$this->username?>,<br>
+ This is your home page<br><br>
+<a href='<?php $i=$this->baseUrl()."/index/logout"; echo $i; ?>'>Click here to logout</a></font>
+<?php
+echo $this->form;
+?></center>

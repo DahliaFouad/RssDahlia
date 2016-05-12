@@ -1,0 +1,36 @@
+
+
+<table class="table">
+	
+<tr  class="danger">
+<th >Name</th>
+<th >Description</th>
+
+<th >Url</th>
+<th> </th>
+<th> </th>
+</tr>
+
+<tr class="success">
+<?php 
+foreach ($this->rss as $data)
+{
+
+
+?>
+
+<td><?php echo $data['name'];  ?></td>
+<td><?php echo $data['description']; ?></td>
+<td><?php echo $data['url']; ?></td>
+<td><a href="  <?php echo$this->baseUrl().'/rss/delete/id/'. $data['id']; ?>"> Delete</a></td>
+<td><a href="  <?php echo$this->baseUrl().'/rss/view/id/'. $data['id']; ?>"> View</a></td>
+
+</tr>
+
+
+<?php
+
+}
+
+?>
+</table>

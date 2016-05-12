@@ -1,0 +1,42 @@
+<table class="table">
+<tr class="danger">
+<td>
+Link
+</td>
+
+<td>
+Content
+</td>
+
+<td>
+Title
+</td>
+
+</tr>
+<?php
+foreach ($this->rssdata['entries'] as $entry) { 
+?>
+<tr class="success">
+	<td>
+	<a href=<?php echo $entry['link']; ?>>Link </a>
+	</td>
+	<td>
+	<?php echo $entry['content']; ?>
+
+	</td>
+        <td>
+	<?php echo $entry['title']; ?>
+
+	</td>
+
+
+
+</tr>
+
+
+
+<?php
+}
+
+?>
+</table>
